@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Social Timeline</title>
+
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+
+  <div class="bg1"></div>
+  <div class="bg2"></div>
+
+  <div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+      <h1>Social Timeline ✨</h1>
+
+      <div class="header-actions">
+        <button class="profile-btn">
+          Profile
+        </button>
+        <button class="logout">
+          Logout
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Hero Section -->
+
+    <div class="hero">
+
+      <div class="hero-text">
+
+        <h2>
+          Share Your Moments 🚀
+        </h2>
+
+        <p>
+          Create beautiful posts and express your thoughts with style.
+          Upload your memories, share your creativity, and enjoy the
+          modern animated social experience.
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+
+        <img 
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+          alt=""
+        >
+
+      </div>
+
+    </div>
+
+    <!-- Create Post -->
+
+    <div class="create-post">
+
+      <h2>Create Amazing Post 🚀</h2>
+
+      <div class="input-box">
+        <input 
+          type="text"
+          id="title"
+          placeholder="Enter post title"
+        >
+      </div>
+
+      <div class="input-box">
+        <input 
+          type="text"
+          id="image"
+          placeholder="Paste image URL"
+        >
+      </div>
+
+      <div class="input-box">
+        <textarea 
+          id="description"
+          placeholder="Write your thoughts..."
+        ></textarea>
+      </div>
+
+      <button class="create-btn" id="createBtn">
+        Create Post
+      </button>
+
+    </div>
+
+    <!-- Timeline -->
+
+    <div class="timeline" id="timeline"></div>
+
+  </div>
+
+  <div class="profile-modal hidden" id="profileModal">
+    <div class="profile-panel">
+      <button class="close-btn" id="closeProfile">×</button>
+      <h3>Profile</h3>
+      <p><strong>Name:</strong> <span id="profileName">User Name</span></p>
+      <p><strong>Email:</strong> <span id="profileEmail">user@example.com</span></p>
+      <p id="profileStatus">Logged in</p>
+      <button class="logout-btn" id="modalLogout">Logout</button>
+    </div>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>
